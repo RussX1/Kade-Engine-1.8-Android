@@ -369,6 +369,17 @@ class Character extends FlxSprite
 
 				antialiasing = false;
 
+                        case 'cj_assets':
+                                frames = Paths.getPackerAtlas('cj_assets', 'shared', true);
+                                animation.addByPrefix('idle', "cj idle dance", 24, false);
+                                animation.addByPrefix('singUP', "cj sing up", 24, false);
+                                animation.addByPrefix('singRIGHT', "cj Sing Note RIGHT", 24, false);
+                                animation.addByPrefix('singLEFT', "cj Sing Note LEFT", 24, false);
+                                animation.addByPrefix('singDOWN', "cj Sing Note DOWN", 24, false
+
+                                loadOffsetFile(curCharacter);
+				barColor = 0xFFf3ff6e;
+				playAnim('idle');
 			case 'parents-christmas':
 				frames = Paths.getSparrowAtlas('mom_dad_christmas_assets', 'shared', true);
 				animation.addByPrefix('idle', 'Parent Christmas Idle', 24, false);
